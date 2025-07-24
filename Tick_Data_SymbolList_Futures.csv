@@ -1,0 +1,308 @@
+Global Futures Data Coverage,,,,,,,,,,,
+, *,,,,,,,,,,
+,Tick Data ,Bloomberg,Bloomberg,Trade Data,Quote Data,,,,,Expected Nightly,
+Description,Symbol,Root Symbol,Generic Symbol,Start Date,Start Date,End Date,Sector,Exchange,Time Zone,Update Time (ET),T/T+
+Australian Dollar Futures,AD,AD,AD1 CURNCY,01/13/1987,01/04/2010,Present,Currency,CME Group,America – Chicago,03:30:00 AM,+1
+Silver Futures,AG,SAI,SAI1 COMDTY,10/13/2015,10/13/2015,Present,Metals,Shanghai Futures Exchange,Asia – Shanghai,06:45:00 AM,
+DJ UBS Commodity Index Futures,AI,DN,DN1 COMDTY,01/04/2010,01/04/2010,Present,Commodity Index,CME Group,America – Chicago,03:30:00 AM,+1
+Aluminum Futures MCX,AL,O9,O91 COMDTY,01/05/2010,01/05/2010,Present,Metals,Multi Commodity Ex. of India,Asia – Mumbai,03:30:00 PM,
+Aluminum Futures,ALA,AA,AA1 COMDTY,10/13/2015,10/13/2015,Present,Metals,Shanghai Futures Exchange,Asia – Shanghai,06:45:00 AM,
+FTSE/JSE Top 40 Index Mini,ALMI,MAL,MAL1 INDEX,04/02/2018,04/02/2018,Present,Equity Index,JSE Equity Derivatives Market,Africa- Johannesburg,05:15:00 AM,+1
+FTSE/JSE Top 40 Index,ALSI,AI,AI1 INDEX,04/02/2018,04/02/2018,Present,Equity Index,JSE Equity Derivatives Market,Africa- Johannesburg,05:15:00 AM,+1
+Aluminum Mini Futures MCX,AM,FMA,FMA1 COMDTY,02/28/2011,02/28/2011,04/30/2020,Metals,Multi Commodity Ex. of India,Asia – Mumbai,-,-
+Australian 90-Day Bank Bill Futures,AU,IR,IR1 COMDTY,07/02/2001,01/04/2010,Present,Interest Rate,ASX Trade24,Australia – Sydney,05:15:00 AM,
+Gold Futures,AUG,AUA,AUA1 COMDTY,10/12/2015,10/12/2015,Present,Metals,Shanghai Futures Exchange,Asia – Shanghai,06:45:00 AM,
+Australian 10-Year Bond Futures,AX,XM,XM1 COMDTY,07/02/2001,07/01/2011,Present,Interest Rate,ASX Trade24,Australia – Sydney,05:15:00 AM,
+Australian 3-Year Bond Futures,AY,YM,YM1 COMDTY,07/02/2001,07/01/2011,Present,Interest Rate,ASX Trade24,Australia – Sydney,05:15:00 AM,
+30-Day Interbank Cash Rate Futures,AZ,IB,IB1 COMDTY,06/02/2011,06/02/2011,Present,Interest Rate,ASX Trade24,Australia – Sydney,05:15:00 AM,
+Blockboard Futures,BB,BLC,BLC1 COMDTY,12/06/2013,12/06/2013,Present,Industrial,Dalian Futures Exchange,Asia – Shanghai,10:00:00 PM,
+Big Dow DJIA ($25) Futures,BD,EE,EE1 INDEX,03/20/2006,01/04/2010,12/17/2013,Equity Index,Chicago Board of Trade,America – Chicago,-,-
+Euro-OAT Futures,BF,OAT,OAT1 COMDTY,04/19/2012,04/19/2012,Present,Interest Rate,Eurex,Europe – Berlin,10:00:00 PM,
+Cash Settled Live Cattle Futures BMFB,BGI,LS,LS1 COMDTY,05/31/2010,05/31/2010,Present,Agriculture,Bolsa de Mercadorias e Futuros,America – Sao Paulo,07:30:00 PM,
+Euro-Bobl 5-Year Futures,BL,OE,OE1 COMDTY,01/02/1997,01/04/2010,Present,Interest Rate,Eurex,Europe – Berlin,10:00:00 PM,
+"Bovespa Futures, Mini",BM,XB,XB1 INDEX,06/01/2010,06/01/2010,Present,Equity Index,Bolsa de Mercadorias e Futuros,America – Sao Paulo,07:30:00 PM,
+10-Year Korea Treasury Bond (KTB) Futures,BMA,KAA,KAA1 COMDTY,04/24/2017,04/24/2017,Present,Interest Rate,Korea Exchange,Asia – Seoul,06:30:00 AM,
+Euro-Bund 10-Year Futures,BN,RX,RX1 COMDTY,01/02/1997,01/04/2010,Present,Interest Rate,Eurex,Europe – Berlin,10:00:00 PM,
+Soybean Oil Futures,BO,BO,BO1 COMDTY,07/01/1982,01/04/2010,Present,Agriculture,Chicago Board of Trade,America – Chicago,03:30:00 AM,+1
+British Pound Futures,BP,BP,BP1 CURNCY,09/01/1977,01/04/2010,Present,Currency,CME Group,America – Chicago,03:30:00 AM,+1
+IBOVESPA Index Futures,BR,BZ,BZ1 INDEX,06/01/2010,06/01/2010,Present,Equity Index,Bolsa de Mercadorias e Futuros,America – Sao Paulo,07:30:00 PM,
+Brazilian Real Futures,BRL,BR,BR1 CURNCY,01/04/2010,01/04/2010,Present,Currency,CME Group,America – Chicago,03:30:00 AM,+1
+Short-Term Euro-BTP Futures,BS,BTS,BTS1 COMDTY,10/19/2010,10/19/2010,Present,Interest Rate,Eurex,Europe – Berlin,10:00:00 PM,
+Long-Term Euro-BTP Futures,BT,IK,IK1 COMDTY,02/22/2010,02/22/2010,Present,Interest Rate,Eurex,Europe – Berlin,10:00:00 PM,
+CME Bitcoin Futures,BTC,BTC,BTC1 CURNCY,12/18/2017,12/18/2017,Present,Currency,CME Group,America – Chicago,03:30:00 AM,+1
+Bitumen Futures,BU,BIT,BIT1 COMDTY,10/12/2015,10/12/2015,Present,Energy,Shanghai Futures Exchange,Asia – Shanghai,06:45:00 AM,
+Euro-Buxl 30-Year Futures,BX,UB,UB1 COMDTY,09/09/2005,01/04/2010,Present,Interest Rate,Eurex,Europe – Berlin,10:00:00 PM,
+Euro-Schatz 2-Year Futures,BZ,DU,DU1 COMDTY,03/07/1997,01/04/2010,Present,Interest Rate,Eurex,Europe – Berlin,10:00:00 PM,
+London Cocoa Futures ICE,C,QC,QC1 COMDTY,01/04/2010,01/04/2010,Present,Agriculture,ICE Futures Europe Commodities,Europe – London,08:00:00 PM,
+FTSE China A50 Index Futures SGX,CA,XU,XU1 INDEX,06/01/2011,06/01/2011,Present,Equity Index,Singapore Exchange (was SIMEX),Asia – Singapore,06:15:00 PM,
+Canadian 10-Year Futures,CB,CN,CN1 COMDTY,04/02/1990,01/04/2010,Present,Interest Rate,Montreal Exchange,America – Montreal,07:00:00 PM,
+Cocoa Futures,CC,CC,CC1 COMDTY,07/01/1986,01/04/2010,Present,Agriculture,ICE Futures US Softs,America – New York,10:00:00 PM,
+Cash Settled Corn Futures,CCM,CRD,CRD1 COMDTY,01/05/2010,01/05/2010,Present,Agriculture,BM&F Bovespa,America – Sao Paulo,07:30:00 PM,
+Canadian Dollar Futures,CD,CD,CD1 CURNCY,01/03/1977,01/04/2010,Present,Currency,CME Group,America – Chicago,03:30:00 AM,+1
+CAC 40 Index Futures,CF,CF,CF1 INDEX,05/02/2000,01/04/2010,Present,Equity Index,Euronext Derivatives Paris,Europe – Paris,09:00:00 PM,
+Cotton No.1 Futures,CFC,WV,WV1 COMDTY,05/23/2016,05/23/2016,Present,Agriculture,Zhengzhou Commodity Exchange,Asia – Shanghai,08:15:00 AM,
+Five-Year Government of Canada Bond Futures,CGF,XQ,XQ1 COMDTY,07/06/2011,12/11/2009,Present,Interest Rate,Montreal Exchange,America – Montreal,07:00:00 PM,
+Light Crude Oil Futures NYMEX,CL,CL,CL1 COMDTY,01/02/1987,01/04/2010,Present,Energy,NYMEX,America – New York,01:00:00 AM,+1
+Corn E-Mini Futures,CM,YC,YC1 COMDTY,01/04/2010,01/04/2010,Present,Agriculture,Chicago Board of Trade,America – Chicago,03:30:00 AM,+1
+Corn Futures,CN,C ,C 1 COMDTY,07/01/1982,01/04/2010,Present,Agriculture,Chicago Board of Trade,America – Chicago,03:30:00 AM,+1
+Standard-Size USD/Offshore RMB (CNH) Futures,CNH,CHY,CHY1 CURNCY,02/25/2013,02/25/2013,Present,Currency,CME Group,America – Chicago,03:30:00 AM,+1
+Brent Crude Oil Futures ICE,CO,CO,CO1 COMDTY,08/01/2003,01/04/2010,Present,Energy,ICE Futures Europe Commodities,Europe – London,08:00:00 PM,
+Coke Futures,COKE,KEE,KEE1 COMDTY,04/15/2011,04/15/2011,Present,Metals,Dalian Futures Exchange,Asia – Shanghai,10:00:00 PM,
+Long Term Swiss Government Bond Futures,CONF,FB,FB1 COMDTY,04/20/2012,04/20/2012,Present,Interest Rate,Eurex,Europe – Berlin,10:00:00 PM,
+Corn Futures,CORN,AC,AC1 COMDTY,11/10/2009,01/04/2010,Present,Agriculture,Dalian Futures Exchange,Asia – Shanghai,10:00:00 PM,
+Crude Oil Futures MCX,CR,U6,U61 COMDTY,01/05/2010,01/05/2010,Present,Energy,Multi Commodity Ex. of India,Asia – Mumbai,03:30:00 PM,
+Three Month CORRA Futures,CRA,COR,COR2 COMDTY,06/12/2020,06/12/2020,Present,Interest Rate,Montreal Exchange,America – Montreal,07:00:00 PM,
+Dubai Crude Oil TOCOM,CRUD,CP,CP1 COMDTY,01/04/2010,01/04/2010,Present,Energy,Tokyo Commodity Exchange,Asia – Tokyo,07:15:00 PM,
+DCE Corn Starch Futures,CS,DCS,DCS1 COMDTY,12/19/2014,12/19/2014,Present,Metals,Dalian Futures Exchange,Asia – Shanghai,10:00:00 PM,
+Cash-Settled Butter Futures,CSB,V6,V61 COMDTY,01/04/2010,01/04/2010,Present,Agriculture,CME Group,America – Chicago,03:30:00 AM,+1
+Cash-Settled Cheese Futures,CSC,CHE,CHE1 COMDTY,06/22/2010,06/22/2010,Present,Agriculture,CME Group,America – Chicago,03:30:00 AM,+1
+Cotton #2 Futures,CT,CT,CT1 COMDTY,01/05/1987,01/04/2010,Present,Agriculture,ICE Futures US Softs,America – New York,10:00:00 PM,
+Copper Futures MCX,CU,YO,YO1 COMDTY,01/05/2010,01/05/2010,Present,Metals,Multi Commodity Ex. of India,Asia – Mumbai,03:30:00 PM,
+Copper Cathode Futures,CUC,CU,CU1 COMDTY,10/12/2015,10/12/2015,Present,Metals,Shanghai Futures Exchange,Asia – Shanghai,06:45:00 AM,
+Canadian Bankers’ Acceptance 3-Month (BAX)  Futures,CX,BA,BA1 COMDTY,01/04/2010,01/04/2010,Present,Interest Rate,Montreal Exchange,America – Montreal,07:00:00 PM,
+DAX Index Futures,DA,GX,GX1 INDEX,01/02/1997,01/04/2010,Present,Equity Index,Eurex,Europe – Berlin,10:00:00 PM,
+Class III Milk Futures,DC,DA,DA1 COMDTY,01/04/2010,01/04/2010,Present,Agriculture,CME Group,America – Chicago,03:30:00 AM,+1
+DJIA ($10) Futures,DJ,DJ,DJ1 INDEX,10/06/1997,01/04/2010,06/18/2015,Equity Index,Chicago Board of Trade,America – Chicago,-,-
+German Mark Futures,DM,DM,DM1 CURNCY,12/02/1974,,12/13/1999,Currency,CME Group,America – Chicago,-,-
+U.S. Dollar Futures BM&F BOVESPA,DO,UC,UC1 CURNCY,06/01/2010,06/01/2010,Present,Currency,Bolsa de Mercadorias e Futuros,America – Sao Paulo,07:30:00 PM,
+USD/INR Currency Futures MSEI,DR,INT,INT1 CURNCY,01/04/2010,01/04/2010,Present,Currency,Metropolitan Stock Exchange of India,Asia – Mumbai,03:00:00 PM,
+Dollar Index Futures ICE,DX,DX,DX1 CURNCY,07/03/1989,01/04/2010,Present,Currency,ICE Futures US Currencies,America – New York,12:00:00 AM,+1
+Dry Whey Futures,DY,DRW,DRW1 COMDTY,01/04/2010,01/04/2010,Present,Agriculture,CME Group,America – Chicago,03:30:00 AM,+1
+Euro FX Futures,EC,EC,EC1 CURNCY,01/04/1999,01/04/2010,Present,Currency,CME Group,America – Chicago,03:30:00 AM,+1
+EUA Futures ICE,ECF,MO,MO1 COMDTY,01/04/2010,01/04/2010,06/04/2021,Energy,ICE Futures Europe Commodities,Europe – London,-,-
+Rapeseed Futures,ECO,IJ,IJ1 COMDTY,01/04/2010,01/04/2010,Present,Agriculture,Euronext Derivatives Paris,Europe – Paris,09:00:00 PM,
+Eurodollar  Futures CME,ED,ED,ED1 COMDTY,12/09/1981,01/04/2010,06/19/2023,Interest Rate,CME Group,America – Chicago,-,-
+Euro FX E-mini Futures,EE,EE,EE1 CURNCY,01/04/2006,01/04/2010,Present,Currency,CME Group,America – Chicago,03:30:00 AM,+1
+MSCI Emerging Markets Mini Futures,EI,MES,MES1 INDEX,06/01/2010,06/01/2010,Present,Equity Index,ICE Futures US Indices,America – New York,10:00:00 PM,
+Eurodollar Futures NYSE Liffe US,EL,LED,LED1 COMDTY,05/02/2011,05/02/2011,05/15/2014,Interest Rate,ICE Futures Europe Financials,America – New York,-,-
+LIBOR 1-Month Futures,EM,,,09/25/1990,,12/31/2001,Interest Rate,CME Group,America – Chicago,-,-
+Nikkei 225 Futures SGX,EN,NI,NI1 INDEX,04/01/1997,01/04/2010,Present,Equity Index,Singapore Exchange (was SIMEX),Asia – Singapore,06:15:00 PM,
+Amsterdam AEX Index Futures,EO,EO,EO1 INDEX,01/02/2008,01/04/2010,Present,Equity Index,Euronext Derivatives Amsterdam,Europe – Amsterdam,09:00:00 PM,
+Russell 2000 eMini ICE/CME Combined,ER,RTY,RTY1 INDEX,01/02/2002,01/04/2010,Present,Equity Index,CME Group,America – New York,03:30:00 AM,+1
+S&P 500 E-Mini Futures,ES,ES,ES1 INDEX,09/10/1997,01/04/2010,Present,Equity Index,CME Group,America – Chicago,03:30:00 AM,+1
+Denatured Ethanol Futures CBOT,ET,DL,DL1 COMDTY,01/04/2010,01/04/2010,Present,Energy,Chicago Board of Trade,America – Chicago,03:30:00 AM,+1
+Ether Futures CME,ETH,DCR,DCR1 CURNCY,02/28/2021,02/28/2021,Present,Currency,CME Group,America – Chicago,06:30:00 AM,+1
+Euro FX E-micro Futures,EU,CRE,CRE1 CURNCY,01/04/2010,01/04/2010,Present,Currency,CME Group,America – Chicago,03:30:00 AM,+1
+ATX Futures,FATX,ATT,ATT1 INDEX,02/10/2014,02/10/2014,Present,Equity Index,Eurex,Europe – Berlin,05:15:00 AM,+1
+TSI Iron Ore CFR China (62% Fe Fines) Index Futures SGX,FEF,SCO,SCO1 COMDTY,08/08/2019,08/08/2019,Present,Metals,Singapore Exchange (was SIMEX),Asia – Singapore,06:15:00 PM,
+Fiberboard Futures,FB,FRE,FRE1 COMDTY,12/06/2013,12/06/2013,Present,Agriculture,Dalian Futures Exchange,Asia – Shanghai,10:00:00 PM,
+Feeder Cattle Futures,FC,FC,FC1 COMDTY,01/03/1978,01/04/2010,Present,Agriculture,CME Group,America – Chicago,03:30:00 AM,+1
+FTSE China H50 Index Futures SGX,FCH,RFC,RFC1 INDEX,05/06/2018,05/06/2018,Present,Equity Index,Singapore Exchange (was SIMEX),Asia – Singapore,06:15:00 PM,
+Crude Palm Oil Futures,FCPO,KO,KO1 COMDTY,08/23/2010,08/23/2010,Present,Agriculture,Bursa Malaysia,Asia – Kuala Lumpur,12:45:00 PM,
+30-Day Federal Funds Futures,FF,FF,FF1 COMDTY,01/01/2010,01/04/2010,Present,Interest Rate,Chicago Board of Trade,America – Chicago,03:30:00 AM,+1
+Glass Futures,FG,FGL,FGL1 COMDTY,05/23/2016,05/23/2016,Present,Industrial,Zhengzhou Commodity Exchange,Asia – Shanghai,08:00:00 AM,
+5-Year Deliverable Interest Rate Swap Futures,FI,CFP,CFP1 COMDTY,01/02/2013,01/02/2013,06/16/2023,Interest Rate,Chicago Board of Trade,America – Chicago,03:30:00 AM,+1
+FTSE Bursa Malaysia KLCI Futures,FKLI,IK,IK1 INDEX,08/23/2010,08/23/2010,Present,Equity Index,Bursa Malaysia,Asia – Kuala Lumpur,12:45:00 PM,
+CNX Nifty Index Futures SGX,FN,IH,IH1 INDEX,05/16/2011,05/16/2011,06/30/2023,Equity Index,Singapore Exchange (was SIMEX),Asia – Singapore,06:15:00 PM,
+NYSE FANG+ Index Future,FNG,FNS,FNS1 INDEX,11/09/2017,11/09/2017,Present,Equity Index,ICE Futures US Indices,America – New York,10:00:00 PM,
+5-Year Interest Rate Swap Futures,FS,DS,DS1 COMDTY,01/04/2010,01/04/2010,09/16/2013,Interest Rate,Chicago Board of Trade,America – Chicago,-,-
+FTSE 100 Index Futures,FT,Z,Z 1 INDEX,07/01/1998,01/04/2010,Present,Equity Index,ICE Futures Europe Financials,Europe – London,09:00:00 PM,
+Fuel Oil Futures,FU,FO,FO1 COMDTY,10/13/2015,10/13/2015,Present,Energy,Shanghai Futures Exchange,Asia – Shanghai,06:45:00 AM,
+US 5-Year T-Note Futures,FV,FV,FV1 COMDTY,07/01/1988,01/04/2010,Present,Interest Rate,Chicago Board of Trade,America – Chicago,03:30:00 AM,+1
+VXSTOXX Futures,FVS,FVS,FVS1 INDEX,01/05/2010,01/05/2010,Present,Equity Index,Eurex,Europe – Berlin,10:00:00 PM,
+Stoxx Europe 600 Index Futures,FXXP,SXO,SXO1 INDEX,11/30/2010,11/30/2010,Present,Equity Index,Eurex,Europe – Berlin,10:00:00 PM,
+Gasoline Futures TOCOM,GASO,JV,JV1 COMDTY,01/04/2010,01/04/2010,Present,Energy,Tokyo Commodity Exchange,Asia – Tokyo,07:15:00 PM,
+Gold Futures COMEX,GC,GC,GC1 COMDTY,01/03/1984,01/04/2010,Present,Metals,COMEX,America – New York,02:00:00 AM,+1
+Gold Futures MCX,GD,U5,U51 COMDTY,01/05/2010,01/05/2010,Present,Metals,Multi Commodity Ex. of India,Asia – Mumbai,03:30:00 PM,
+Long Gilt Futures,GL,G,G 1 COMDTY,07/01/1998,01/04/2010,Present,Interest Rate,ICE Futures Europe Financials,Europe – London,09:00:00 PM,
+Gold Mini Futures MCX,GM,P6,P61 COMDTY,01/05/2010,01/05/2010,Present,Metals,Multi Commodity Ex. of India,Asia – Mumbai,03:30:00 PM,
+Non-Fat Dry Milk Futures,GNF,LE,LE1 COMDTY,01/05/2010,01/05/2010,Present,Agriculture,CME Group,America – Chicago,03:30:00 AM,+1
+Low Sulphur Gasoil Futures ICE,GO,QS,QS1 COMDTY,01/04/2010,01/04/2010,Present,Energy,ICE Futures Europe Commodities,Europe – London,08:00:00 PM,
+Gold Petal Futures MCX,GP,OPP,OPP1 COMDTY,04/18/2011,04/18/2011,Present,Metals,Multi Commodity Ex. of India,Asia – Mumbai,03:30:00 PM,
+H-Shares Hang Seng China Enterprises Index,HC,HC,HC1 INDEX,01/04/2010,01/04/2010,Present,Equity Index,Hong Kong Futures Exchange,Asia – Hong Kong,05:00:00 PM,
+Hot-rolled Coil Futures,HCH,ROC,ROC1 COMDTY,10/13/2015,10/13/2015,Present,Metals,Shanghai Futures Exchange,Asia – Shanghai,06:45:00 AM,
+Copper High Grade Futures COMEX,HG,HG,HG1 COMDTY,12/01/1989,01/04/2010,Present,Metals,COMEX,America – New York,02:00:00 AM,+1
+Hang Seng Index Futures,HI,HI,HI1 INDEX,02/01/2001,01/04/2010,Present,Equity Index,Hong Kong Futures Exchange,Asia – Hong Kong,05:00:00 PM,
+Mini Hang Seng Index Futures,HM,HU,HU1 INDEX,01/04/2010,01/04/2010,Present,Equity Index,Hong Kong Futures Exchange,Asia – Hong Kong,05:00:00 PM,
+Heating Oil #2 Futures NYMEX,HO,HO,HO1 COMDTY,01/03/1984,01/04/2010,Present,Energy,NYMEX,America – New York,01:00:00 AM,+1
+Unleaded Gasoline Futures NYMEX,HU,HU,HU1 COMDTY,09/01/1987,,12/31/2006,Energy,NYMEX,America – New York,-,-
+IBEX 35 Index Futures,IB,IB,IB1 INDEX,07/01/2003,01/04/2010,Present,Equity Index,Meff Renta Variable (Madrid),Europe – Madrid,04:00:00 PM,
+Arabica Coffee 4-5,ICF,AX,AX1 COMDTY,01/05/2010,01/05/2010,Present,Agriculture,BM&F Bovespa,America – Sao Paulo,07:30:00 PM,
+MSCI Indonesia Index Futures,ID,IDO,IDO1 INDEX,06/11/2012,06/11/2012,12/04/2020,Equity Index,Singapore Exchange (was SIMEX),Asia – Singapore,-,-
+NYH (RBOB) Gasoline Futures ICE,IG,PG,PG1 COMDTY,05/02/2011,05/02/2011,Present,Energy,ICE Futures Europe Commodities,Europe – London,08:00:00 PM,
+FTSE MIB Index Futures,II,ST,ST1 INDEX,10/01/2004,05/02/2011,Present,Equity Index,Borsa Italiana (IDEM),Europe – Rome,10:30:00 PM,
+FTSE MIB Mini,IM,SW,SW1 INDEX,05/02/2011,05/02/2011,Present,Equity Index,Borsa Italiana (IDEM),Europe – Rome,10:30:00 PM,
+UK Natural Gas Futures ICE,IN,FN,FN1 COMDTY,01/04/2010,01/04/2010,Present,Energy,ICE Futures Europe Commodities,Europe – London,08:00:00 PM,
+Heating Oil Futures ICE,IO,NV,NV1 COMDTY,04/01/2011,04/01/2011,Present,Energy,ICE Futures Europe Commodities,Europe – London,08:00:00 PM,
+DCE Iron Ore Futures,IRO,IOE,IOE1 COMDTY,10/21/2013,10/21/2013,Present,Metals,Dalian Futures Exchange,Asia – Shanghai,10:00:00 PM,
+SGX INR/USD Future,IU,XID,XID1 CURNCY,09/08/2014,09/08/2014,Present,Currency,Singapore Exchange (was SIMEX),Asia – Singapore,06:15:00 PM,
+IBEX 35 Mini Futures,IX,ID,ID1 INDEX,05/02/2011,05/02/2011,Present,Equity Index,Meff Renta Variable (Madrid),Europe – Madrid,04:00:00 PM,
+Platinum Futures TOCOM,JA,JA,JA1 COMDTY,07/01/2003,01/04/2010,Present,Metals,Tokyo Commodity Exchange,Asia – Tokyo,07:15:00 PM,
+Japanese 10-Year Bond Futures JPX,JB,JB,JB1 COMDTY,07/01/2003,01/04/2010,Present,Interest Rate,Osaka Exchange,Asia – Tokyo,08:05:00 PM,
+Mini 10-Year Japanese Government Bond Futures,JBM,BJ,BJ1 COMDTY,05/09/2011,05/09/2011,Present,Interest Rate,Singapore Exchange (was SIMEX),Asia – Singapore,06:15:00 PM,
+Egg Futures,JD,DCE,DCE1 COMDTY,11/08/2013,11/08/2013,Present,Agriculture,Dalian Futures Exchange,Asia – Shanghai,10:00:00 PM,
+Japanese Yen E-Mini Futures,JE,JE,JE1 CURNCY,01/04/2006,01/04/2010,Present,Currency,CME Group,America – Chicago,03:30:00 AM,+1
+Gold Futures TOCOM,JG,JG,JG1 COMDTY,07/01/2003,01/04/2010,Present,Metals,Tokyo Commodity Exchange,Asia – Tokyo,07:15:00 PM,
+Gold Mini-sized Futures TOCOM,JM,JGP,JGP1 COMDTY,07/04/2011,07/04/2011,Present,Metals,Tokyo Commodity Exchange,Asia – Tokyo,07:15:00 PM,
+Coking Coal Futures,JMCO,CKC,CKC1 COMDTY,03/22/2013,03/22/2013,Present,Metals,Dalian Futures Exchange,Asia – Shanghai,10:00:00 PM,
+Orange Juice Futures,JO,JO,JO1 COMDTY,07/06/1987,01/04/2010,Present,Agriculture,ICE Futures US Softs,America – New York,10:00:00 PM,
+Nikkei 400 Futures JPX,JP400,JPW,JPW1 INDEX,11/26/2014,11/26/2014,Present,Equity Index,Osaka Exchange,Asia – Tokyo,08:05:00 PM,
+Japonica Rice Futures,JR,ZVB,ZVB1 COMDTY,06/29/2016,06/29/2016,Present,Agriculture,Zhengzhou Commodity Exchange,Asia – Shanghai,08:00:00 AM,
+Japanese Yen Futures,JY,JY,JY1 CURNCY,03/01/1977,01/04/2010,Present,Currency,CME Group,America – Chicago,03:30:00 AM,+1
+Coffee “C” Futures,KC,KC,KC1 COMDTY,01/05/1987,01/04/2010,Present,Agriculture,ICE Futures US Softs,America – New York,10:00:00 PM,
+Korean 3-Year Futures,KE,KE,KE1 COMDTY,08/01/2003,,06/30/2011,Interest Rate,Korea Exchange,Asia – Seoul,-,-
+Kerosene Futures TOCOM,KERO,JX,JX1 COMDTY,01/04/2010,01/04/2010,Present,Energy,Tokyo Commodity Exchange,Asia – Tokyo,07:15:00 PM,
+KOSPI 200 Futures,KM,KM,KM1 INDEX,09/30/2003,10/22/2013,Present,Equity Index,Korea Exchange,Asia – Seoul,06:30:00 AM,
+Euro/Swedish Krona Future,KRK,KRP,KRP1 CURNCY,02/08/2012,02/08/2012,Present,Currency,ICE Futures US Currencies,America – New York,10:00:00 PM,
+KC HRW Wheat Futures,KW,KW,KW1 COMDTY,12/16/2013,12/16/2013,Present,Agriculture,Chicago Board of Trade,America – Chicago,03:30:00 AM,+1
+Lumber Futures (Discontinued),LB,LB,LB1 COMDTY,12/02/1974,01/04/2010,05/15/2023,Agriculture,CME Group,America – Chicago,-,-
+Lumber Futures (New),LBR,LB,LB1 COMDTY,08/08/2022,08/08/2022,Present,Agriculture,CME Group,America – Chicago,03:30:00 AM,+1
+Live Cattle Futures,LC,LC,LC1 COMDTY,12/02/1974,01/04/2010,Present,Agriculture,CME Group,America – Chicago,03:30:00 AM,+1
+Lead Futures MCX,LD,BL,BL1 COMDTY,01/05/2010,01/05/2010,Present,Metals,Multi Commodity Ex. of India,Asia – Mumbai,03:30:00 PM,
+Lean Hogs Futures,LH,LH,LH1 COMDTY,04/01/1981,01/04/2010,Present,Agriculture,CME Group,America – Chicago,03:30:00 AM,+1
+Late Indica Rice Futures,LR,IRL,IRL1 COMDTY,05/24/2016,05/24/2016,Present,Agriculture,Zhengzhou Commodity Exchange,Asia – Shanghai,08:00:00 AM,
+Micro E-mini Russell 2000 Index Futures,M2K,HWR,HWR1 INDEX,05/06/2019,05/06/2019,Present,Equity Index,CME Group,America – Chicago,05:15:00 AM,+1
+E-micro Australian Dollar Futures,M6A,CRD,CRD1 CURNCY,01/04/2010,01/04/2010,Present,Currency,CME Group,America – Chicago,03:30:00 AM,+1
+E-micro British Pound Futures,M6B,CRP,CRP1 CURNCY,01/04/2010,01/04/2010,Present,Currency,CME Group,America – Chicago,03:30:00 AM,+1
+Methanol Futures,MA,ZME,ZME1 COMDTY,05/23/2016,05/23/2016,Present,Industrial,Zhengzhou Commodity Exchange,Asia – Shanghai,08:00:00 AM,
+Municipal Bonds Futures,MB,MB,MB1 COMDTY,06/11/1985,,03/21/2006,Interest Rate,CME Group,America – Chicago,-,-
+Micro Bitcoin Futures,MBT,BMR,BMR1 CURNCY,05/03/2019,05/03/2019,Present,Currency,CME Group,America – Chicago,05:15:00 AM,+1
+Mini H-Shares China Enterprises Index Futures,MC,MHC,MHC1 INDEX,01/04/2010,01/04/2010,Present,Equity Index,Hong Kong Futures Exchange,Asia – Hong Kong,05:00:00 PM,
+E-micro Canadian Dollar/American Dollar Futures,MCD,MCD,MCD1 CURNCY,12/21/2010,12/21/2010,Present,Currency,CME Group,America – Chicago,03:30:00 AM,+1
+E-micro WTI Crude Oil Futures,MCL,WMI,WMI1 COMDTY,07/11/2021,07/11/2021,Present,Energy,NYMEX,America – New York,01:00:00 AM,+1
+S&P 400 MidCap Futures,MD,MD,MD1 INDEX,01/04/1993,01/04/2010,02/25/2015,Equity Index,CME Group,America – Chicago,-,-
+Mexican Peso Futures,ME,PE,PE1 CURNCY,07/10/2002,01/04/2010,Present,Currency,CME Group,America – Chicago,03:30:00 AM,+1
+Micro E-mini S&P 500 Index Futures,MES,HWA,HWA1 INDEX,05/06/2019,05/06/2019,Present,Equity Index,CME Group,America – Chicago,05:15:00 AM,+1
+CAC 40 Index Mini Future,MFCJ,CMS,CMS1 INDEX,09/04/2013,09/04/2013,Present,Equity Index,Euronext Derivatives Paris,Europe – Paris,09:00:00 PM,
+MSCI EAFE Mini Futures,MG,MFS,MFS1 INDEX,03/20/2006,01/04/2010,Present,Equity Index,ICE Futures US Indices,America – New York,10:00:00 PM,
+E-micro Gold Futures,MGC,MGC,MGC1 COMDTY,10/04/2010,10/04/2010,Present,Metals,COMEX,America – New York,02:00:00 AM,+1
+E-micro Copper Futures,MHG,MHC,MHC1 COMDTY,05/08/2022,05/08/2022,Present,Metals,COMEX,America – New York,02:00:00 AM,+1
+S&P 400 MidCap E-Mini Futures,MI,FA,FA1 INDEX,04/01/2005,01/04/2010,Present,Equity Index,CME Group,America – Chicago,03:30:00 AM,+1
+E-micro Japanese Yen-American Dollar Futures,MJY,MJY,MJY1 CURNCY,01/04/2010,01/04/2010,03/14/2022,Currency,CME Group,America – Chicago,-,-
+Lead Mini Futures MCX,ML,VUI,VUI1 COMDTY,06/01/2010,06/01/2010,04/30/2020,Metals,Multi Commodity Ex. of India,Asia – Mumbai,-,-
+Micro E-Mini NASDAQ 100 Index Futures,MNQ,HWB,HWB1 INDEX,05/06/2019,05/06/2019,Present,Equity Index,CME Group,America – Chicago,05:15:00 AM,+1
+Soybean E-Mini Futures,MS,YK,YK1 COMDTY,01/04/2010,01/04/2010,Present,Agriculture,Chicago Board of Trade,America – Chicago,03:30:00 AM,+1
+Wheat E-Mini Futures CBOT,MW,YP,YP1 COMDTY,01/04/2010,01/04/2010,Present,Agriculture,Chicago Board of Trade,America – Chicago,03:30:00 AM,+1
+Micro E-mini Dow,MYM,HWI,HWI1 INDEX,05/07/2019,05/07/2019,Present,Equity Index,CME Group,America – Chicago,05:15:00 AM,+1
+Natural Gas Futures MCX,NA,ZS,ZS1 COMDTY,01/05/2010,01/05/2010,Present,Energy,Multi Commodity Ex. of India,Asia – Mumbai,03:30:00 PM,
+Bank Nifty Futures NSE,NB,AF,AF1 INDEX,01/04/2010,01/04/2010,03/31/2023,Equity Index,Natl Stock Exchange of India,Asia – Calcutta,03:00:00 PM,
+NASDAQ 100 Index Futures,ND,ND,ND1 INDEX,04/10/1996,01/04/2010,06/18/2015,Equity Index,CME Group,America – Chicago,-,-
+Nikkei 225 Futures JPX,NE,NK,NK1 INDEX,02/01/2008,01/04/2010,Present,Equity Index,Osaka Exchange,Asia – Tokyo,08:05:00 PM,
+S&P CNX Nifty Index Futures NSE,NF,NZ,NZ1 INDEX,01/04/2010,01/04/2010,03/31/2023,Equity Index,Natl Stock Exchange of India,Asia – Calcutta,03:00:00 PM,
+Natural Gas Futures NYMEX,NG,NG,NG1 COMDTY,01/04/1993,01/04/2010,Present,Energy,NYMEX,America – New York,01:00:00 AM,+1
+Nickel Futures MCX,NI,S4,S41 COMDTY,01/05/2010,01/05/2010,Present,Metals,Multi Commodity Ex. of India,Asia – Mumbai,03:30:00 PM,
+SHFE Standard Nickel Cathode Futures,NIN,XII,XII1 COMDTY,10/12/2015,10/12/2015,Present,Metals,Shanghai Futures Exchange,Asia – Shanghai,06:45:00 AM,
+Norwegian Krone/Swedish Krona Futures ICE,NJ,NJ,NJ1 CURNCY,02/27/2012,02/27/2012,Present,Currency,ICE Futures US Currencies,America – New York,10:00:00 PM,
+Nikkei 225 Futures CME,NK,NX,NX1 INDEX,09/25/1990,01/04/2010,Present,Equity Index,CME Group,America – Chicago,03:30:00 AM,+1
+Nickel Mini Futures MCX,NL,QWE,QWE1 COMDTY,12/29/2011,12/29/2011,06/21/2019,Metals,Multi Commodity Ex. of India,Asia – Mumbai,-,-
+Nikkei 225 mini Futures JPX,NM,NO,NO1 INDEX,01/04/2010,01/04/2010,Present,Equity Index,Osaka Exchange,Asia – Tokyo,08:05:00 PM,
+Norwegian Krone Futures,NOK,NO,NO1 CURNCY,11/09/2009,11/09/2009,Present,Currency,CME Group,America – Chicago,05:15:00 AM,+1
+NASDAQ 100 E-Mini Futures,NQ,NQ,NQ1 INDEX,07/01/1999,01/04/2010,Present,Equity Index,CME Group,America – Chicago,03:30:00 AM,+1
+US Dollar/Norwegian Krone Futures ICE,NT,KNT,KNT1 CURNCY,02/08/2012,02/08/2012,Present,Currency,ICE Futures US Currencies,America – New York,10:00:00 PM,
+Nikkei 225 Futures Yen-Denominated CME,NY,NH,NH1 INDEX,01/04/2010,01/04/2010,Present,Equity Index,CME Group,America – Chicago,03:30:00 AM,+1
+New Zealand Dollar Futures,NZ,NV,NV1 CURNCY,01/04/2010,01/04/2010,Present,Currency,CME Group,America – Chicago,03:30:00 AM,+1
+Oats Futures,OA,O,O 1 COMDTY,07/01/1982,01/04/2010,Present,Agriculture,Chicago Board of Trade,America – Chicago,03:30:00 AM,+1
+One-Day Interbank Deposit Futures,OB,OD,OD1 COMDTY,06/01/2010,06/01/2010,Present,Interest Rate,Bolsa de Mercadorias e Futuros,America – Sao Paulo,07:30:00 PM,
+OBX Index Futures,OBX,OI,OI1 INDEX,01/02/2014,01/02/2014,Present,Equity Index,Oslo Bors,Europe – Oslo,06:00:00 AM,+1
+Rapeseed Oil Futures,OI,ZRO,ZRO1 COMDTY,05/23/2016,05/23/2016,Present,Agriculture,Zhengzhou Commodity Exchange,Asia – Shanghai,08:00:00 AM,
+OMX Stockholm 30 Index Futures,OMXS30,QC,QC1 INDEX,04/10/2017,04/10/2017,Present,Equity Index,Nordic Equity Derivatives Exchange,Europe – Stockholm,05:15:00 AM,+1
+Palladium Futures NYMEX,PA,PA,PA1 COMDTY,01/03/1994,01/04/2010,Present,Metals,NYMEX,America – New York,01:00:00 AM,+1
+Palm Olein Futures,PALM,PAL,PAL1 COMDTY,11/10/2009,01/04/2010,Present,Agriculture,Dalian Futures Exchange,Asia – Shanghai,10:00:00 PM,
+Pork Bellies Futures,PB,PB,PB1 COMDTY,12/02/1974,01/04/2010,07/15/2011,Agriculture,CME Group,America – Chicago,-,-
+Lead Futures,PBL,PBL,PBL1 COMDTY,10/13/2015,10/13/2015,Present,Metals,Shanghai Futures Exchange,Asia – Shanghai,06:45:00 AM,
+Platinum Futures NYMEX,PL,PL,PL1 COMDTY,10/01/2007,01/04/2010,Present,Metals,NYMEX,America – New York,01:00:00 AM,+1
+Wheat PM Futures,PM,VOO,VOO1 COMDTY,05/23/2016,05/23/2016,Present,Agriculture,Zhengzhou Commodity Exchange,Asia – Shanghai,08:00:00 AM,
+Polyethylene Futures,POLY,POL,POL1 COMDTY,11/10/2009,01/04/2010,Present,Industrial,Dalian Futures Exchange,Asia – Shanghai,10:00:00 PM,
+Polypropylene Futures,PP,PYL,PYL1 COMDTY,02/28/2014,02/28/2014,Present,Industrial,Dalian Futures Exchange,Asia – Shanghai,10:00:00 PM,
+S&P Canada 60 Futures,PT,PT,PT1 INDEX,10/01/1999,01/04/2010,Present,Equity Index,Montreal Exchange,America – Montreal,07:00:00 PM,
+PVC Futures,PVC,PVC,PVC1 COMDTY,11/10/2009,01/04/2010,Present,Industrial,Dalian Futures Exchange,Asia – Shanghai,10:00:00 PM,
+Natural Gas E-Mini Futures,QG,EO,EO1 COMDTY,07/19/2002,01/04/2010,Present,Energy,NYMEX,America – New York,01:00:00 AM,+1
+Crude Oil E-Mini Futures NYMEX,QM,EC,EC1 COMDTY,07/19/2002,01/04/2010,Present,Energy,NYMEX,America – New York,01:00:00 AM,+1
+South African Rand Futures,RA,RA,RA1 CURNCY,01/04/2010,01/04/2010,Present,Currency,CME Group,America – Chicago,03:30:00 AM,+1
+Steel Rebar Futures,RB,RBT,RBT1 COMDTY,10/13/2015,10/13/2015,Present,Metals,Shanghai Futures Exchange,Asia – Shanghai,06:45:00 AM,
+Robusta Coffee Futures,RC,CFD,CFD1 COMDTY,01/04/2010,01/04/2010,Present,Agriculture,ICE Futures Europe Commodities,Europe – London,08:00:00 PM,
+Euro/Swiss Franc Physically Deliverable Future,RF,RF,RF1 CURNCY,01/04/2010,01/04/2010,Present,Currency,CME Group,America – Chicago,03:30:00 AM,+1
+Russell 1000 eMini ICE,RF1,RM,RM1 INDEX,09/14/2017,09/14/2017,06/14/2018,Equity Index,ICE Futures US Indices,America – New York,-,-
+Early Rice Futures,RI,IRI,IRI1 COMDTY,05/31/2016,05/31/2016,Present,Agriculture,Zhengzhou Commodity Exchange,Asia – Shanghai,08:00:00 AM,
+Russell 2000 Futures,RL,R2,R21 INDEX,02/04/1993,,12/31/2008,Equity Index,ICE Futures US Indices,America – New York,-,-
+Russell 1000 eMini ICE/CME Combined,RM,RSY,RSY1 INDEX,01/04/2010,01/04/2010,Present,Equity Index,CME Group,America – New York,03:30:00 AM,+1
+Rapeseed Meal Futures,RMR,ZRR,ZRR1 COMDTY,05/23/2016,05/23/2016,Present,Agriculture,Zhengzhou Commodity Exchange,Asia – Shanghai,08:00:00 AM,
+Euro/British Pound Futures,RP,RP,RP1 CURNCY,01/04/2010,01/04/2010,Present,Currency,CME Group,America – Chicago,03:30:00 AM,+1
+Rough Rice Futures,RR,RR,RR1 COMDTY,01/04/2010,01/04/2010,Present,Agriculture,Chicago Board of Trade,America – Chicago,03:30:00 AM,+1
+Rapeseed Futures,RS,ZRC,ZRC1 COMDTY,05/23/2016,05/23/2016,Present,Agriculture,Zhengzhou Commodity Exchange,Asia – Shanghai,08:00:00 AM,
+Russell 1000 eMini CME,RS1,RSY,RSY1 INDEX,07/10/2017,07/10/2017,09/14/2017,Equity Index,CME Group,America – Chicago,-,-
+Rubber Futures TOCOM,RSS3,JN,JN1 COMDTY,01/04/2010,01/04/2010,Present,Agriculture,Tokyo Commodity Exchange,Asia – Tokyo,07:15:00 PM,
+RTS Russia Trading System Index Futures,RTS,VE,VE1 INDEX,08/09/2019,08/09/2019,06/23/2022,Equity Index,Moscow Exchange,Asia – Moscow,-,-
+Russell 2000 eMini CME,RTY,RTY,RTY1 INDEX,07/10/2017,07/10/2017,09/13/2017,Equity Index,CME Group,America – Chicago,-,-
+Russian Ruble Futures CME,RU,RU,RU1 CURNCY,01/07/2010,01/07/2010,Present,Currency,CME Group,America – Chicago,03:30:00 AM,+1
+Natural Rubber Futures,RUB,RT,RT1 COMDTY,10/13/2015,10/13/2015,Present,Industrial,Shanghai Futures Exchange,Asia – Shanghai,06:45:00 AM,
+Euro/Japanese Yen Futures,RY,RY,RY1 CURNCY,01/04/2010,01/04/2010,Present,Currency,CME Group,America – Chicago,03:30:00 AM,+1
+Three Month Euro Swiss Franc Futures,S,ES,ES1 COMDTY,01/04/2010,01/04/2010,12/17/2021,Interest Rate,ICE Futures Europe Financials,Europe – London,-,-
+Three Month SARON Index Futures,SA3,SSY,SSY1 COMDTY,06/11/2021,03/02/2021,Present,Interest Rate,ICE Futures Europe Financials,Europe – London,09:00:00 PM,
+Set50 Index Futures,S50,BC,BC1 INDEX,11/02/2020,11/02/2020,Present,Equity Index,Thailand Futures Exchange,Asia – Bangkok,05:15:00 AM,+1
+Sugar #11 Futures,SB,SB,SB1 COMDTY,07/01/1986,01/04/2010,Present,Agriculture,ICE Futures US Softs,America – New York,10:00:00 PM,
+Swedish Krona Futures,SEK,SE,SE1 CURNCY,01/04/2010,01/04/2010,Present,Currency,CME Group,America – Chicago,03:30:00 AM,+1
+Swiss Franc Futures,SF,SF,SF1 CURNCY,12/02/1974,01/04/2010,Present,Currency,CME Group,America – Chicago,03:30:00 AM,+1
+Ferroalloy Futures,SFF,IRE,IRE1 COMDTY,05/23/2016,05/23/2016,Present,Metals,Zhengzhou Commodity Exchange,Asia – Shanghai,08:00:00 AM,
+MSCI Singapore Index Futures SGX,SG,QZ,QZ1 INDEX,06/02/2011,06/02/2011,Present,Equity Index,Singapore Exchange (was SIMEX),Asia – Singapore,06:15:00 PM,
+Silver Mini Futures MCX,SI,SN,SN1 COMDTY,01/05/2010,01/05/2010,Present,Metals,Multi Commodity Ex. of India,Asia – Mumbai,03:30:00 PM,
+Silver TOCOM,SILV,JI,JI1 COMDTY,01/04/2010,01/04/2010,Present,Metals,Tokyo Commodity Exchange,Asia – Tokyo,07:15:00 PM,
+Indian Rupee/USD Futures,SIR,SIR,SIR1 CURNCY,01/29/2013,01/29/2013,Present,Currency,CME Group,America – Chicago,03:30:00 AM,+1
+Silver Micro Futures MCX,SL,JPA,JPA1 COMDTY,02/18/2011,02/18/2011,Present,Metals,Multi Commodity Ex. of India,Asia – Mumbai,03:30:00 PM,
+Soybean Meal Futures,SM,SM,SM1 COMDTY,07/01/1982,01/04/2010,Present,Agriculture,Chicago Board of Trade,America – Chicago,03:30:00 AM,+1
+Manganese Silicon Futures,SMM,IMR,IMR1 COMDTY,05/23/2016,05/23/2016,Present,Industrial,Zhengzhou Commodity Exchange,Asia – Shanghai,08:00:00 AM,
+SHFE Standard Tin Futures,SN,XOO,XOO1 COMDTY,10/13/2015,10/13/2015,Present,Metals,Shanghai Futures Exchange,Asia – Shanghai,06:45:00 AM,
+Three Month SONIA Index Futures,SO3,SFI,SFI1 COMDTY,06/01/2018,06/01/2018,Present,Interest Rate,ICE Futures Europe Financials,Europe – London,09:00:00 PM,
+Soybean Oil Futures,SOIL,SH,SH1 COMDTY,11/10/2009,01/04/2010,Present,Agriculture,Dalian Futures Exchange,Asia – Shanghai,10:00:00 PM,
+No.2 Soybean Futures,SOYB,BP,BP1 COMDTY,11/10/2009,01/04/2010,Present,Agriculture,Dalian Futures Exchange,Asia – Shanghai,10:00:00 PM,
+No.1 Soybean Futures,SOYBN,AK,AK1 COMDTY,11/10/2009,01/04/2010,Present,Agriculture,Dalian Futures Exchange,Asia – Shanghai,10:00:00 PM,
+Soybean Meal Futures,SOYM,AE,AE1 COMDTY,11/10/2009,01/04/2010,Present,Agriculture,Dalian Futures Exchange,Asia – Shanghai,10:00:00 PM,
+S&P 500 Futures,SP,SP,SP1 INDEX,04/21/1982,01/04/2010,09/17/2021,Equity Index,CME Group,America – Chicago,-,-
+Silver Futures MCX,SR,JL,JL1 COMDTY,01/05/2010,01/05/2010,Present,Metals,Multi Commodity Ex. of India,Asia – Mumbai,03:30:00 PM,
+One-Month SOFR Futures,SR1,SER,SER1 COMDTY,05/06/2018,05/06/2018,Present,Interest Rate,CME Group,America – Chicago,03:30:00 AM,+1
+Three-Month SOFR Futures,SR3,SFR,SFR1 COMDTY,05/06/2018,05/06/2018,Present,Interest Rate,CME Group,America – Chicago,03:30:00 AM,+1
+White Sugar Futures,SRS,CB,CB1 COMDTY,05/23/2016,05/23/2016,Present,Agriculture,Zhengzhou Commodity Exchange,Asia – Shanghai,08:00:00 AM,
+Sterling 3-Month Futures,ST,L,L 1 COMDTY,07/01/1998,01/04/2010,12/17/2021,Interest Rate,ICE Futures Europe Financials,Europe – London,-,
+Silver Futures COMEX,SV,SI,SI1 COMDTY,12/01/1983,01/04/2010,Present,Metals,COMEX,America – New York,02:00:00 AM,+1
+Swiss Market Index Futures,SW,SM,SM1 INDEX,10/01/1998,01/04/2010,Present,Equity Index,Eurex,Europe – Berlin,10:00:00 PM,
+Soybean Futures,SY,S,S 1 COMDTY,07/01/1982,01/04/2010,Present,Agriculture,Chicago Board of Trade,America – Chicago,03:30:00 AM,+1
+Purified Terephthalic Acid (PTA) Futures,TA,PT,PT1 COMDTY,05/23/2016,05/23/2016,Present,Industrial,Zhengzhou Commodity Exchange,Asia – Shanghai,08:00:00 AM,
+T-Bills Futures,TB,TB,TB1 COMDTY,01/04/1982,,09/15/2003,Interest Rate,CME Group,America – Chicago,-,-
+Russell 2000 eMini ICE,TF,RTA,RTA1 INDEX,09/13/2017,09/13/2017,06/15/2018,Equity Index,ICE Futures US Indices,America – New York,-,-
+TOPIX Mini  Futures JPX,TM,TMI,TMI1 INDEX,01/04/2010,01/04/2010,Present,Equity Index,Osaka Exchange,Asia – Tokyo,08:05:00 PM,
+10-Year Deliverable Interest Rate Swap Futures,TN,CNP,CNP1 COMDTY,01/02/2013,01/02/2013,06/16/2023,Interest Rate,Chicago Board of Trade,America – Chicago,03:30:00 AM,+1
+Micro 10-Year Yield Futures,TNY,YQT,YQT1 COMDTY,08/15/2021,08/15/2021,Present,Interest Rate,CME Group,America – Chicago,03:30:00 AM,+1
+3-Month TONA Futures JPX,TOA3M,JOA,JOA1 COMDTY,05/29/2023,05/29/2023,Present,Interest Rate,Osaka Exchange,Asia – Tokyo,08:05:00 PM,
+TOPIX Futures JPX,TP,TP,TP1 INDEX,07/01/2003,01/04/2010,Present,Equity Index,Osaka Exchange,Asia – Tokyo,08:05:00 PM,
+10-Year Interest Rate Swap Futures,TS,DI,DI1 COMDTY,01/04/2010,01/04/2010,09/16/2013,Interest Rate,Chicago Board of Trade,America – Chicago,-,-
+US 2-Year T-Note Futures,TU,TU,TU1 COMDTY,01/02/1991,01/04/2010,Present,Interest Rate,Chicago Board of Trade,America – Chicago,03:30:00 AM,+1
+MSCI Taiwan Index Futures SGX,TW,TW,TW1 INDEX,04/01/1997,01/04/2010,10/30/2020,Equity Index,Singapore Exchange (was SIMEX),Asia – Singapore,-,-
+FTSE Taiwan Index Futures SGX,TWN,TWT,TWT1 INDEX,08/20/2020,08/20/2020,Present,Equity Index,Singapore Exchange (was SIMEX),Asia – Singapore,05:15:00 AM,+1
+US 10-Year T-Note Futures,TY,TY,TY1 COMDTY,01/03/1983,01/04/2010,Present,Interest Rate,Chicago Board of Trade,America – Chicago,03:30:00 AM,+1
+Ultra T-Bond Futures,UB,WN,WN1 COMDTY,02/01/2010,02/01/2010,Present,Interest Rate,Chicago Board of Trade,America – Chicago,03:30:00 AM,+1
+USD/CNH (Full Sized) FUTURES SGX,UC,XUC,XUC1 CURNCY,10/19/2014,10/19/2014,Present,Currency,Singapore Exchange (was SIMEX),Asia – Singapore,06:15:00 PM,
+Euribor 3-Month Futures,UR,ER,ER1 COMDTY,01/12/1999,01/04/2010,Present,Interest Rate,ICE Futures Europe Financials,Europe – London,09:00:00 PM,
+US 30-Year T-Bond Futures,US,US,US1 COMDTY,10/01/1982,01/04/2010,Present,Interest Rate,Chicago Board of Trade,America – Chicago,03:30:00 AM,+1
+Ultra 10-Year T-Note Futures,UT,UXY,UXY1 COMDTY,01/11/2016,01/11/2016,Present,Interest Rate,Chicago Board of Trade,America – Chicago,03:30:00 AM,+1
+STOXX Europe 50 Index Futures,VH,VH,VH1 INDEX,07/01/2003,01/04/2010,Present,Equity Index,Eurex,Europe – Berlin,10:00:00 PM,
+Australian 5 yr Bond Futures,VT,VT,VT1 COMDTY,11/30/2020,11/30/2020,Present,Interest Rate,ASX Trade24,Australia – Sydney,05:15:00 AM,+1
+VIX Futures,VX,UX,UX1 INDEX,07/02/2012,07/02/2012,Present,Equity Index,CBOE Futures Exchange,America – Chicago,06:00:00 PM,
+White Sugar Futures ICE,W,QW,QW1 COMDTY,01/04/2010,01/04/2010,Present,Agriculture,ICE Futures Europe Commodities,Europe – London,08:00:00 PM,
+Wheat Futures CBOT,WC,W ,W 1 COMDTY,07/01/1982,01/04/2010,Present,Agriculture,Chicago Board of Trade,America – Chicago,03:30:00 AM,+1
+Wheat WH Futures,WH,VN,VN1 COMDTY,05/23/2016,05/23/2016,Present,Agriculture,Zhengzhou Commodity Exchange,Asia – Shanghai,08:00:00 AM,
+Wheat No. 2 Milling Futures NYSE Liffe,WM,CA,CA1 COMDTY,01/04/2010,01/04/2010,Present,Agriculture,Euronext Derivatives Paris,Europe – Paris,09:00:00 PM,
+Wire Rod Futures,WR,WRT,WRT1 COMDTY,10/16/2015,10/16/2015,Present,Metals,Shanghai Futures Exchange,Asia – Shanghai,06:45:00 AM,
+WTI Light Sweet Crude Oil Futures ICE,WT,EN,EN1 COMDTY,01/04/2010,01/04/2010,Present,Energy,ICE Futures Europe Commodities,Europe – London,08:00:00 PM,
+Euro Stoxx Banks Futures,XA,CA,CA1 INDEX,01/05/2010,01/05/2010,Present,Equity Index,Eurex,Europe – Berlin,10:00:00 PM,
+E-Mini Energy Select Sector Futures,XAE,IXP,IXP1 INDEX,05/02/2011,05/02/2011,Present,Equity Index,CME Group,America – Chicago,03:30:00 AM,+1
+E-Mini Financial Select Sector Futures,XAF,IXA,IXA1 INDEX,03/29/2011,03/29/2011,Present,Equity Index,CME Group,America – Chicago,03:30:00 AM,+1
+E-Mini Technology Select Sector Futures,XAK,IXT,IXT1 INDEX,05/02/2011,05/02/2011,Present,Equity Index,CME Group,America – Chicago,03:30:00 AM,+1
+E-Mini Consumer Staples Select Sector Futures,XAP,IXR,IXR1 INDEX,04/14/2011,04/14/2011,Present,Equity Index,CME Group,America – Chicago,03:30:00 AM,+1
+E-Mini Utilities Select Sector Futures,XAU,IXS,IXS1 INDEX,05/02/2011,05/02/2011,Present,Equity Index,CME Group,America – Chicago,03:30:00 AM,+1
+RBOB Gasoline Futures NYMEX,XB,XB,XB1 COMDTY,10/02/2006,01/04/2010,Present,Energy,NYMEX,America – New York,01:00:00 AM,+1
+CBOE Bitcoin (USD) Futures,XBT,XBT,XBT1 CURNCY,12/11/2017,12/11/2017,06/19/2019,Currency,CBOE Futures Exchange,America – Chicago,-,-
+Gold Mini-sized Futures NYSE Liffe,XG,XG,XG1 COMDTY,01/06/2006,01/04/2010,12/28/2022,Metals,ICE Futures US Metals,America – New York,-,-
+Stoxx Europe 600 Banks Futures,XK,BJ,BJ1 INDEX,01/05/2010,01/05/2010,Present,Equity Index,Eurex,Europe – Berlin,10:00:00 PM,
+Mini-DAX Index Futures,XM,DFW,DFW1 INDEX,10/28/2015,10/28/2015,Present,Equity Index,Eurex,Europe – Berlin,10:00:00 PM,
+Stoxx Europe 600 Oil & Gas Futures,XO,KG,KG1 INDEX,01/05/2010,01/05/2010,Present,Equity Index,Eurex,Europe – Berlin,10:00:00 PM,
+ASX SPI 200 Index Futures,XP,XP,XP1 INDEX,07/02/2001,07/01/2011,Present,Equity Index,ASX Trade24,Australia – Sydney,03:30:00 AM,
+Euro Stoxx Basic Resources Futures,XR,JS,JS1 INDEX,01/05/2010,01/05/2010,Present,Equity Index,Eurex,Europe – Berlin,10:00:00 PM,
+Euro Stoxx Oil & Gas Futures,XU,QR,QR1 INDEX,01/05/2010,01/05/2010,Present,Equity Index,Eurex,Europe – Berlin,10:00:00 PM,
+EURO STOXX 50 Index Futures,XX,VG,VG1 INDEX,07/01/1998,01/04/2010,Present,Equity Index,Eurex,Europe – Berlin,10:00:00 PM,
+Dow Jones ($5) E-mini Futures,YM,DM,DM1 INDEX,05/01/2002,01/04/2010,Present,Equity Index,Chicago Board of Trade,America – Chicago,03:30:00 AM,+1
+Silver Mini-sized Futures NYSE Liffe,YS,YS,YS1 COMDTY,01/04/2006,01/04/2010,12/28/2022,Metals,ICE Futures US Metals,America – New York,-,-
+NYSE Comp Futures,YX,YX,YX1 INDEX,01/03/1984,,05/31/2003,Equity Index,ICE Futures US Indices,America – New York,-,-
+Thermal Coal Futures,ZC,TRC,TRC1 COMDTY,05/23/2016,05/23/2016,Present,Energy,Zhengzhou Commodity Exchange,Asia – Shanghai,08:00:00 AM,
+Zinc Futures MCX,ZI,A7,A71 COMDTY,01/05/2010,01/05/2010,Present,Metals,Multi Commodity Ex. of India,Asia – Mumbai,03:30:00 PM,
+Zinc Mini Futures MCX,ZN,IJL,IJL1 COMDTY,05/24/2010,05/24/2010,04/30/2020,Metals,Multi Commodity Ex. of India,Asia – Mumbai,-,-
+Zinc Futures,ZNZ,ZNA,ZNA1 COMDTY,10/12/2015,10/12/2015,Present,Metals,Shanghai Futures Exchange,Asia – Shanghai,06:45:00 AM,

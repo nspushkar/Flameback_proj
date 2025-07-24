@@ -1,0 +1,28 @@
+# Python temporary files
+__pycache__/
+*.pyc
+
+# Virtual Environment folder
+venv/
+env/
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+
+# Spark and temporary files
+checkpoint/
+/tmp/spark/
+metastore_db/
+
+# === PROJECT SPECIFIC IGNORES ===
+
+# Ignore ALL generated model files
+*.joblib
+
+# Ignore the generated database
+*.db
+
+# Ignore the generated long-format CSV
+timeseries_data_long.csv
