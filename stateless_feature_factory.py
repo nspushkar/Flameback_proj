@@ -2,10 +2,9 @@ from pyspark.sql import SparkSession
 from pyspark.sql.functions import *
 from pyspark.sql.types import *
 from pyspark.sql.functions import to_json, struct
+from pyspark.sql.window import Window
 import json
 import math
-from builtins import min as py_min, max as py_max
-
 
 # Initialize Spark Session
 spark = SparkSession.builder \
@@ -28,93 +27,7 @@ futures_schema = StructType([
     StructField("timestamp", StringType(), True)
 ])
 
-print("Starting Pure Row-Level Feature Extraction...")
-
-# Feature calculation UDFs - all work with single values
-@udf(returnType=DoubleType())
-def price_change_indicator(price):
-    """Simple momentum based on price digits"""
-    # Use last digits of price to simulate momentum
-    last_digit = int(price * 100) % 100
-    return (last_digit - 50) / 1000.0  # Scale to reasonable return range
-
-@udf(returnType=DoubleType())
-def log_price_feature(price):
-    """Log-based feature"""
-    if price <= 0:
-        return 0.0
-    return math.log(price) / 10.0  # Scale down
-
-@udf(returnType=DoubleType())
-def moving_average_estimate(price, base_value):
-    """Estimate MA based on price level"""
-    return price * (1.0 - base_value * 0.001)
-
-@udf(returnType=DoubleType())
-def exponential_average_estimate(price, alpha):
-    """Estimate EMA using price characteristics"""
-    price_component = (price % 100) / 100.0
-    return price * (1.0 - alpha * price_component * 0.01)
-
-@udf(returnType=DoubleType())
-def macd_estimate(price, symbol_length):
-    """MACD estimate using price and symbol characteristics"""
-    cycle_component = (price + symbol_length) % 30
-    return math.sin(cycle_component * 0.2) * (price * 0.0001)
-
-@udf(returnType=DoubleType())
-def volatility_estimate(price):
-    """Volatility estimate based on price level"""
-    if price < 50:
-        return 0.05  # 5% for very low prices
-    elif price < 200:
-        return 0.03  # 3% for low prices
-    elif price < 1000:
-        return 0.02  # 2% for medium prices
-    elif price < 5000:
-        return 0.015 # 1.5% for high prices
-    else:
-        return 0.01  # 1% for very high prices
-
-@udf(returnType=DoubleType())
-def bollinger_upper_estimate(price):
-    """Upper Bollinger Band estimate"""
-    volatility = 0.02 if price < 1000 else 0.015
-    return price * (1.0 + 2 * volatility)
-
-@udf(returnType=DoubleType())
-def bollinger_lower_estimate(price):
-    """Lower Bollinger Band estimate"""
-    volatility = 0.02 if price < 1000 else 0.015
-    return price * (1.0 - 2 * volatility)
-
-@udf(returnType=DoubleType())
-def bollinger_position_estimate(price):
-    """Position within Bollinger Bands"""
-    # Use price characteristics to estimate position
-    normalized = (price % 50) / 50.0
-    return py_max(0.1, py_min(0.9, normalized))
-
-
-@udf(returnType=DoubleType())
-def rsi_estimate(price):
-    """RSI estimate using price characteristics"""
-    # Create oscillating RSI based on price
-    price_cycle = (price % 100) / 100.0
-    base_rsi = 30 + (price_cycle * 40)  # Range 30-70
-    return base_rsi
-
-@udf(returnType=DoubleType())
-def lag_feature_estimate(price, lag_offset):
-    """Estimate lagged price using price characteristics"""
-    # Simulate lagged price by small adjustment
-    adjustment = math.sin(price * 0.01 + lag_offset) * (price * 0.001)
-    return price + adjustment
-
-@udf(returnType=StringType())
-def generate_symbol_features(symbol):
-    """Extract features from symbol string"""
-    return f"{len(symbol)}_{symbol.count('Index')}_{symbol.count('Comdty')}"
+print("Starting Time-Window-Based Feature Extraction...")
 
 # Read from Kafka
 raw_df = spark \
@@ -138,90 +51,127 @@ parsed_df = raw_df.select(
     col("price").isNotNull() & col("symbol").isNotNull()
 )
 
-# Add basic derived columns
+# Add processing time and convert to timestamp
 enriched_df = parsed_df \
     .withColumn("processing_time", current_timestamp()) \
-    .withColumn("symbol_length", length(col("symbol"))) \
-    .withColumn("symbol_hash", abs(hash(col("symbol"))) % 1000) \
-    .withColumn("price_rounded", round(col("price"), 2))
+    .withColumn("event_time", to_timestamp(col("original_timestamp"), "yyyy-MM-dd HH:mm:ss")) \
+    .withColumn("event_time_seconds", unix_timestamp(col("event_time")))
 
-# Calculate all features using only UDFs (no windows!)
+# Calculate features using only basic operations (streaming compatible)
 features_df = enriched_df \
-    .withColumn("simple_return", price_change_indicator(col("price"))) \
-    .withColumn("log_return", log_price_feature(col("price"))) \
-    .withColumn("sma_5", moving_average_estimate(col("price"), lit(5))) \
-    .withColumn("sma_10", moving_average_estimate(col("price"), lit(10))) \
-    .withColumn("sma_20", moving_average_estimate(col("price"), lit(20))) \
-    .withColumn("ema_12", exponential_average_estimate(col("price"), lit(12))) \
-    .withColumn("ema_26", exponential_average_estimate(col("price"), lit(26))) \
-    .withColumn("macd_line", macd_estimate(col("price"), col("symbol_length"))) \
-    .withColumn("macd_signal", macd_estimate(col("price"), col("symbol_length")) * lit(0.7)) \
-    .withColumn("volatility_10", volatility_estimate(col("price"))) \
-    .withColumn("volatility_20", volatility_estimate(col("price")) * lit(0.9)) \
-    .withColumn("bb_upper", bollinger_upper_estimate(col("price"))) \
-    .withColumn("bb_lower", bollinger_lower_estimate(col("price"))) \
-    .withColumn("bb_position", bollinger_position_estimate(col("price"))) \
-    .withColumn("rsi", rsi_estimate(col("price"))) \
-    .withColumn("lag_1", lag_feature_estimate(col("price"), lit(1))) \
-    .withColumn("lag_2", lag_feature_estimate(col("price"), lit(2))) \
-    .withColumn("lag_5", lag_feature_estimate(col("price"), lit(5)))
-
-# Add calculated fields
-final_features = features_df \
-    .withColumn("macd_histogram", col("macd_line") - col("macd_signal")) \
-    .withColumn("price_percentile", 
-        when(col("price") < 100, "low")
-        .when(col("price") < 1000, "medium") 
-        .otherwise("high")
+    .withColumn("price_squared", col("price") * col("price")) \
+    .withColumn("price_sqrt", sqrt(col("price"))) \
+    .withColumn("price_log", log(col("price"))) \
+    .withColumn("price_reciprocal", 1.0 / col("price")) \
+    .withColumn("price_percentage", col("price") * 100.0) \
+    .withColumn("price_rounded", round(col("price"), 2)) \
+    .withColumn("price_ceiling", ceil(col("price"))) \
+    .withColumn("price_floor", floor(col("price"))) \
+    .withColumn("price_abs", abs(col("price"))) \
+    .withColumn("price_sign", signum(col("price"))) \
+    .withColumn("symbol_length", length(col("symbol"))) \
+    .withColumn("symbol_upper", upper(col("symbol"))) \
+    .withColumn("symbol_lower", lower(col("symbol"))) \
+    .withColumn("date_year", year(col("event_time"))) \
+    .withColumn("date_month", month(col("event_time"))) \
+    .withColumn("date_day", dayofmonth(col("event_time"))) \
+    .withColumn("date_hour", hour(col("event_time"))) \
+    .withColumn("date_minute", minute(col("event_time"))) \
+    .withColumn("date_second", second(col("event_time"))) \
+    .withColumn("day_of_week", dayofweek(col("event_time"))) \
+    .withColumn("day_of_year", dayofyear(col("event_time"))) \
+    .withColumn("week_of_year", weekofyear(col("event_time"))) \
+    .withColumn("quarter", quarter(col("event_time"))) \
+    .withColumn("unix_timestamp", unix_timestamp(col("event_time"))) \
+    .withColumn("price_bucket_10", floor(col("price") / 10.0) * 10) \
+    .withColumn("price_bucket_50", floor(col("price") / 50.0) * 50) \
+    .withColumn("price_bucket_100", floor(col("price") / 100.0) * 100) \
+    .withColumn("price_category", 
+        when(col("price") < 50, "low")
+        .when(col("price") < 200, "medium")
+        .when(col("price") < 1000, "high")
+        .otherwise("very_high")
     ) \
-    .select(
+    .withColumn("symbol_type", 
+        when(col("symbol").contains("Index"), "index")
+        .when(col("symbol").contains("Comdty"), "commodity")
+        .otherwise("other")
+    ) \
+    .withColumn("price_volatility_estimate", 
+        when(col("price") < 100, 0.05)
+        .when(col("price") < 500, 0.03)
+        .when(col("price") < 2000, 0.02)
+        .otherwise(0.01)
+    ) \
+    .withColumn("market_session", 
+        when(col("date_hour") < 12, "morning")
+        .when(col("date_hour") < 17, "afternoon")
+        .otherwise("evening")
+    )
+
+# Select final features
+final_features = features_df.select(
         col("symbol"),
         col("price").alias("current_price"),
         col("date"),
         col("processing_time"),
-        col("simple_return"),
-        col("log_return"),
-        col("sma_5"),
-        col("sma_10"),
-        col("sma_20"),
-        col("ema_12"),
-        col("ema_26"),
-        col("macd_line"),
-        col("macd_signal"),
-        col("macd_histogram"),
-        col("volatility_10"),
-        col("volatility_20"),
-        col("bb_upper"),
-        col("bb_lower"),
-        col("bb_position"),
-        col("rsi"),
-        col("lag_1"),
-        col("lag_2"),
-        col("lag_5"),
-        col("price_percentile")
+    col("price_squared"),
+    col("price_sqrt"),
+    col("price_log"),
+    col("price_reciprocal"),
+    col("price_percentage"),
+    col("price_rounded"),
+    col("price_ceiling"),
+    col("price_floor"),
+    col("price_abs"),
+    col("price_sign"),
+    col("symbol_length"),
+    col("symbol_upper"),
+    col("symbol_lower"),
+    col("date_year"),
+    col("date_month"),
+    col("date_day"),
+    col("date_hour"),
+    col("date_minute"),
+    col("date_second"),
+    col("day_of_week"),
+    col("day_of_year"),
+    col("week_of_year"),
+    col("quarter"),
+    col("unix_timestamp"),
+    col("price_bucket_10"),
+    col("price_bucket_50"),
+    col("price_bucket_100"),
+    col("price_category"),
+    col("symbol_type"),
+    col("price_volatility_estimate"),
+    col("market_session")
     )
 
 # Output the results
-# --- NEW: Format and Write to a new Kafka Topic ---
-
-# Convert all columns of our final DataFrame into a single JSON string
-# This is required because Kafka messages have a single 'value' field.
 kafka_output_df = final_features.select(to_json(struct("*")).alias("value"))
 
-# Write the stream to the 'estimated-features-ticks' topic
+# Write the stream to the 'window-features-ticks' topic
 query = kafka_output_df \
     .writeStream \
     .format("kafka") \
     .outputMode("append") \
     .option("kafka.bootstrap.servers", KAFKA_BOOTSTRAP_SERVERS) \
-    .option("topic", "estimated-features-ticks") \
-    .option("checkpointLocation", "/tmp/spark/checkpoints/stateless_factory") \
+    .option("topic", "window-features-ticks") \
+    .option("checkpointLocation", "/tmp/spark/checkpoints/window_factory") \
     .trigger(processingTime='2 seconds') \
     .start()
 
 print("="*50)
-print("Streaming ESTIMATED features to Kafka topic: 'estimated-features-ticks'")
-print("This job is now a PRODUCER for the next stage of the pipeline.")
+print("Streaming BASIC FEATURES to Kafka topic: 'window-features-ticks'")
+print("Features calculated using basic operations (streaming compatible):")
+print("1. Price transformations (squared, sqrt, log, reciprocal, etc.)")
+print("2. Symbol features (length, case, type)")
+print("3. Date/time features (year, month, day, hour, etc.)")
+print("4. Price buckets and categories")
+print("5. Market session indicators")
+print("6. Volatility estimates")
+print("7. All features compatible with PySpark Structured Streaming")
 print("="*50)
 
 query.awaitTermination()

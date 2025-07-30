@@ -2,6 +2,7 @@ import pandas as pd
 from kafka import KafkaProducer
 import json
 import time
+from datetime import datetime
 
 # --- Configuration ---
 KAFKA_TOPIC = 'futures-ticks'
@@ -32,19 +33,25 @@ except FileNotFoundError:
 # --- Loop through data and send to Kafka ---
 # We iterate through the DataFrame rows and send each one as a message.
 for index, row in df.iterrows():
+    # Create a timestamp from the date (assuming 9:30 AM for market open)
+    date_str = row['date']
+    timestamp_str = f"{date_str} 09:30:00"
+    
     # Construct the message from the row data
     message = {
         'date': row['date'],
         'symbol': row['symbol'],
-        'price': row['price']
+        'price': row['price'],
+        'timestamp': timestamp_str  # Add the timestamp field that feature factory expects
     }
 
     try:
         # Send the message to the specified Kafka topic
         producer.send(KAFKA_TOPIC, value=message)
 
-        # Print to console to show progress
-        print(f"Sent: {message}")
+        # Print to console to show progress (less verbose)
+        if index % 1000 == 0:
+            print(f"Sent {index} messages...")
 
         # Wait for a short period to simulate a real-time stream
         time.sleep(SIMULATION_SPEED_SECONDS)
